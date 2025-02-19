@@ -1,6 +1,7 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+import  { getAuth  , GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
+
 
 
 const firebaseConfig = {
@@ -13,6 +14,6 @@ const firebaseConfig = {
     measurementId: "G-8GKDW9GG2B"
   };
 
-  export const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+export const app = initializeApp(firebaseConfig);
+export const Auth = getAuth(app);
 export const db = getFirestore(app);
